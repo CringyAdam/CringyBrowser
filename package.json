@@ -1,0 +1,26 @@
+{
+  "name": "CringyBrowser",
+  "description": "CringyBrowser is a cross-platform, hackable browser written in Javascript. CringyBrowser is built with Electron, which enables building cross-platform desktop apps with HTML, CSS, and Javascript. Since every part of the application's code is visible, customizing the browser in any way is possible.",
+  "author": "Cringy Adam",
+  "productName": "CringyBrowser",
+  "version": "0.0.3",
+  "main": "main.js",
+  "dependencies": {
+    "nedb": "^1.8.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "electron": "^1.6.2",
+    "electron-builder": "^17.0.3"
+  },
+  "build": {
+    "appId": "com.cringybrowser",
+    "mac": {
+      "category": "public.app-category.utilities"
+    }
+  },
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build"
+  }
+}
